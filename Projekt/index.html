@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Pojištění lidí" />
+    <meta name="keywords" content="pojištění, pojištěnci, JakSim" />
+    <meta name="author" content="JakSim" />
+    <title>PojistkaProTebe</title>
+    <link href="styl.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Pojistka<span>Pro</span>Tebe</h1>
+            <small>Pojistíme vše!!</small>
+        </div>
+        <nav>
+            <ul>
+                <li class="aktivni"><a href="index.html">Pojištěnci</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sekce">
+        <header>
+            <h1>Pojištěnci</h1>
+        </header>
+
+        <section>
+            <table id="tabulkaPojistencu">
+                <thead>
+                    <th>Jméno a Příjmení</th>
+                    <th>Věk</th>
+                    <th>Telefonní číslo</th>
+                    <th>Akce</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section id="novyPojistenec">
+            <h2 id="nadpis-h2-novy-pojistenec"><u>Nový Pojištěnec</u></h2>
+            <form><b>
+                <label for="jmeno-prijmeni">Jméno a Přijmení:</label>
+                <input type="text" id="jmeno" name="jmeno" required placeholder="Zadejte jméno" />
+
+                <label for="vek">Věk:</label>
+                <input type="number" id="vek" name="vek" required placeholder="Zadejte věk" min="1" max="120" />
+
+                <label for="telefon">Telefonní číslo:</label>
+                <input type="tel" id="telefon" name="telefon" required placeholder="Zadejte telefonní číslo" />
+
+                <button type="submit"><b>Přidat pojištěnce</b></button>
+            </b></form>
+        </section>
+    </section>
+
+    <footer>
+        Vytvořil &copy;JakSim 2025 
+    </footer>
+
+    <script src="/js/Pojistenec.js"></script>
+    <script src="/js/Aplikace.js"></script>
+</body>
+</html>
